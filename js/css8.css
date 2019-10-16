@@ -1,0 +1,84 @@
+table {
+    margin: 0px auto;
+}
+
+
+legend {
+
+    color: darkgoldenrod;    
+}
+
+input {
+
+display: block;
+
+margin: 0px auto ;
+
+padding: 5px 0 ;
+
+width: 50%;
+text-align: center;
+}
+
+label {
+    width: 50%;
+    text-align: center;
+    margin: 10px auto ;
+  display: block;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+tr {
+    background-color: darkorange;
+    text-align: center;
+    font-size: 23px;
+
+
+    
+}
+
+table p {
+                width: 100px;
+                padding: 9px;
+            }
+
+            body p {
+                text-align: center;
+    font-size: 30px;
+    color: darkcyan;
+    
+}
+
+
+
+th {
+    margin: 8px;
+    padding: 9px;
+background-color: darkorange;
+text-align: center;
+font-size: 20px;
+
+
+}
+
+
+h1 {
+    background-color: black;  text-align: center; color: cornflowerblue;
+}
+body{
+
+background-color: darkred;
+
+}
