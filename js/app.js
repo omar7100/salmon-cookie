@@ -31,9 +31,9 @@ function Store(name, minCust, maximumCust, avarageCookies) {
     this.totalCookies = 0;
     storeLocations.push(this);
 }
-
+////=hours.length
 Store.prototype.numCustHourly = function () {
-    for (var i = 0; i <= Hours.length; i++) {
+    for (var i = 0; i < Hours.length; i++) {
         var singleHourCust = Math.floor(Math.random() * (this.maxCust - this.minCust)) + this.minCust;
         this.avgCustArray.push(singleHourCust);
     }
@@ -70,11 +70,11 @@ Store.prototype.render = function () {
 };
 
 
-var Seattle = new Store('Seattle', 3, 14, 4.3);
-var Tokyo = new Store('Tokyo', 4, 21, 1.5);
-var Dubai = new Store('Dubai', 9, 37, 3.3);
-var Paris = new Store('Paris', 21, 35, 2.4);
-var Lima = new Store('Lima', 25, 67, 6.5);
+var Seattle = new Store('Seattle', 23, 65, 6.3);
+var Tokyo = new Store('Tokyo', 3, 24, 1.2);
+var Dubai = new Store('Dubai', 11, 38,3.7);
+var Paris = new Store('Paris', 20, 38, 2.3);
+var Lima = new Store('Lima', 2, 16, 4.6);
 
 function renderAllStores() {
     for (var i = 0; i < storeLocations.length; i++) {
@@ -138,10 +138,11 @@ function submitHandler(event) {
   makeFooterRow();
 
 }
-var form = document.getElementById('addShopForm');
-form.addEventListener('submit', submitHandler);
 
 
 HeaderRow();
 renderAllStores();
 makeFooterRow();
+
+var form = document.getElementById('addShopForm');
+form.addEventListener('submit', submitHandler);
