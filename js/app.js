@@ -94,29 +94,32 @@ function makeFooterRow() {
 
         for (var j = 0; j < storeLocations.length; j++) {
             hourlyTotal = hourlyTotal + storeLocations[j].cookiesEachHourArray[i];
-            bigStupidTotal += storeLocations[j].cookiesEachHourArray[i];
-            console.log(bigStupidTotal);
+            console.log(hourlyTotal);
         }
         var tdElement = document.createElement('td');
-        tdElement.textContent = hourlyTotal;
         Tablerow.appendChild(tdElement);
+        tdElement.textContent = hourlyTotal;
+        bigStupidTotal += hourlyTotal;
     }
     tdElement = document.createElement('td');
-    tdElement.textContent = bigStupidTotal;
     Tablerow.appendChild(tdElement);
+    tdElement.textContent = bigStupidTotal;
 };
 
+HeaderRow();
+renderAllStores();
+makeFooterRow();
 
-function Store(name, minCust, maximumCust, avarageCookies) {
-  this.name = name;
-  this.minCust = minCust;
-  this.maxCust = maximumCust;
-  this.avgCookie = avarageCookies;
-  this.avgCustArray = [];
-  this.cookiesEachHourArray = [];
-  this.totalCookies = 0;
-  storeLocations.push(this);
-}
+// function Store(name, minCust, maximumCust, avarageCookies) {
+//   this.name = name;
+//   this.minCust = minCust;
+//   this.maxCust = maximumCust;
+//   this.avgCookie = avarageCookies;
+//   this.avgCustArray = [];
+//   this.cookiesEachHourArray = [];
+//   this.totalCookies = 0;
+//   storeLocations.push(this);
+// }
 function submitHandler(event) {
   event.preventDefault();
   
@@ -140,9 +143,6 @@ function submitHandler(event) {
 }
 
 
-HeaderRow();
-renderAllStores();
-makeFooterRow();
 
 var form = document.getElementById('addShopForm');
 form.addEventListener('submit', submitHandler);
