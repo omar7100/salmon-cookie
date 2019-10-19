@@ -1,0 +1,54 @@
+body {
+  
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/12/Cookie-Wallpaper-Full-HD.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: x-large;
+ }
+ body img {
+    width: 250px;
+    height: 250px;
+ }
+
+nav {
+    color: rgb(8, 1, 1);
+}
+
+
+a {
+    color: rgb(199, 174, 174);
+    font-size: 30px;
+    text-decoration-style: solid;
+    font-style: initial;
+    font-family: sans-serif;
+}
+
+h1 {
+
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(10, 7, 2);
+    background-image: url(https://fbcovers.alegriphotos.com/covers/Open-color-wood-texture480.jpg ) ;
+
+
+}
+
+p {text-align: center;
+color: rgb(30, 20, 31);
+font-size: 20px;}
+#cover {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
