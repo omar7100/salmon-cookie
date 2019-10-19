@@ -1,0 +1,65 @@
+p {
+
+    text-align: center;
+    font-size: 30px;
+    color: purple;
+}
+
+
+body {
+
+background-color: rgb(0, 0, 0);
+
+}
+
+
+#pic1 {
+
+display: block;
+margin: auto;
+
+
+}
+
+
+#pic2 {
+
+display: block;
+margin: auto;
+
+
+
+}
+
+#pic3{
+    display: block;
+    margin: auto;
+}
+
+#pic4 {
+
+    display: block;
+    margin: auto;
+    
+    
+    }
+    
+    
+    #pic5 {
+    
+    display: block;
+    margin: auto;
+    
+    
+    
+    }
+    
+    #pic6{
+        display: block;
+        margin: auto;
+    }
+
+    #pic7 {
+        display: block;
+        margin: auto;
+    }
