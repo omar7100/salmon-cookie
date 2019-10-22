@@ -36,7 +36,7 @@ h1 {
 }
 
 p {text-align: center;
-color: rgb(30, 20, 31);
+color: rgb(0, 0, 0);
 font-size: 20px;}
 #cover {
     display: block;
@@ -45,4 +45,15 @@ font-size: 20px;}
   width: 50%;
 }
 
+#hour {
+font-size: 20px;
+    color: rgb(255, 255, 255);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#loc  {
+    font-size: 25px;
+    font-family: sans-serif;
+    background-color: rgb(255, 223, 40);
+}
 
